@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+				android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+	<ImageView 
+		android:layout_height="250dp" 
+		android:layout_width="match_parent"
+		android:id="@+id/ImageLive" 
+		android:adjustViewBounds="true" 
+		android:src="@android:color/black"
+		android:layout_alignParentEnd="true" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:ellipsize="end"
+		android:lines="1"
+		android:text="@string/Lbl_Live" 
+		android:layout_below="@+id/livestreamingHeader_streamerImage"
+		android:background="@drawable/bg_livestreaming_rounded_rect_red_carrot"
+		android:textColor="@color/gnt_white"
+		android:textSize="@dimen/msg_text_secondary"
+		android:layout_marginStart="10dp"
+		android:layout_marginTop="10dp"
+		android:focusable="false"
+		android:paddingEnd="10dp"
+		android:paddingStart="10dp"
+		android:clickable="false"
+		android:gravity="start"
+		android:textAlignment="textStart" />
+
+	<TextView
+		android:id="@+id/Txt_Username"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:ellipsize="end"
+		android:text="started broadcasting live"
+		android:textSize="@dimen/msg_text_primary"
+		android:textStyle="bold"
+		android:textColor="@color/gnt_white"
+		android:layout_centerInParent="true"
+		android:gravity="center" />
+
+</RelativeLayout>

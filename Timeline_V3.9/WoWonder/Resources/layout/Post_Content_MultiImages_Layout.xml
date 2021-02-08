@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="130dp"
+                          android:weightSum="3">
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:minHeight="130dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/imageplacholder" />
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:minHeight="130dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/imageplacholder" />
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                      android:foreground="#90000000"
+                      android:background="#90000000"
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:minHeight="130dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/imageplacholder" />
+                    <TextView
+                        android:id="@+id/counttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="7dp"
+                        android:textSize="23sp"
+                        android:textColor="@color/textLight_color"
+                        android:layout_weight="15"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginEnd="6dp" />
+                </RelativeLayout>
+            </LinearLayout>

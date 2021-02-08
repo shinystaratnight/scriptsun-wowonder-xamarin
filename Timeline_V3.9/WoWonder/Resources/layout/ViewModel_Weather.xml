@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="?attr/selectableItemBackground"
+               android:orientation="vertical">
+    
+	<RelativeLayout  
+		android:focusable="true"
+        android:clickable="true"
+        android:padding="10dp" 
+        android:layout_centerHorizontal="true"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <TextView
+	    	android:id="@+id/textWeather"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content" 
+	    	android:textSize="14dp"
+	    	android:layout_alignParentStart="true" 
+	    	android:textColor="@color/accent"
+	    	android:text="@string/Lbl_Weather"
+	    	android:textStyle="bold"
+	        android:layout_marginBottom="10dp"
+	    	android:layout_gravity="start|center" /> 
+	    <ImageView
+            android:id="@+id/Image" 
+            android:layout_below="@+id/textWeather"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_post_desert" />
+        <TextView
+            android:id="@+id/HeadText"
+            android:layout_toEndOf="@+id/Image"
+            android:layout_below="@+id/textWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp" 
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:focusable="false"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:clickable="false"
+            android:textAlignment="textStart" />  
+	    <TextView 
+		    android:id="@+id/PlaceText"
+            android:layout_toEndOf="@+id/Image"
+            android:layout_below="@+id/HeadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp" 
+	    	android:textColor="@color/text_color_in_between"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="0dp"
+            android:focusable="false"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:clickable="false"
+            android:textAlignment="textStart" />
+        <TextView
+            android:id="@+id/subText" 
+            android:layout_below="@+id/textWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="35dp"
+	    	android:layout_alignParentEnd="true" 
+            android:layout_marginEnd="10dp" 
+            android:focusable="false"
+            android:lines="1"
+            android:maxLines="1"  />  
+	</RelativeLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:background="?attr/colorDivider" /> 
+	<androidx.recyclerview.widget.RecyclerView 
+		android:id="@+id/Recyler"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:scrollbars="horizontal"
+		android:layout_marginEnd="0dp" />  
+</LinearLayout> 
